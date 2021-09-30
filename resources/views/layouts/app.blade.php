@@ -13,7 +13,9 @@
 
         <!-- Styles -->
         @livewireStyles
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
+        <link rel="stylesheet" href="https://pspaudioware.andymnewhouse.me/css/tailwind.css">
+        @stack('styles')
     </head>
     <body class="font-sans antialiased">
         <livewire:notifications />

@@ -15,6 +15,18 @@ class StyleGuide extends Model
 
     public static function defaultSettings() {
         return [
+            'nav' => [
+                'a' => [
+                    'text-size' => 'text-lg',
+                    'text-color' => 'text-blue-700',
+                    'font-weight' => 'font-bold',
+                    'rounded' => 'rounded-md',
+                ],
+                'a:hover' => [
+                    'text-color' => 'text-white',
+                    'background-color' => 'from-sapphire hover:to-blue-700',
+                ]
+            ],
             'headings' => [
                 'h1' => [
                     'text-size' => 'text-4xl',
@@ -44,12 +56,28 @@ class StyleGuide extends Model
                     'margin-top' => 'mt-6',
                     'margin-bottom' => 'mb-2',
                 ],
+                'subtitle' => [
+                    'text-size' => 'text-xl',
+                    'text-color' => 'text-gray-900',
+                    'font-weight' => 'font-semibold',
+                    'text-transform' => 'uppercase',
+                    'margin-top' => 'mt-6',
+                    'margin-bottom' => 'mb-2',
+                ],
+                'panel' => [
+                    'text-size' => 'text-xl',
+                    'text-color' => 'text-blue-700',
+                    'font-weight' => 'font-semibold',
+                    'text-transform' => 'normal-case',
+                ],
             ],
             'typography' => [
                 'p' => [
                     'text-size' => 'text-base',
                     'text-color' => 'text-gray-900',
                     'font-weight' => 'font-normal',
+                    'margin-top' => 'mt-6',
+                    'margin-bottom' => 'mb-2',
                 ],
                 'p-strong' => [
                     'text-color' => 'text-gray-900',
@@ -61,6 +89,8 @@ class StyleGuide extends Model
                     'font-weight' => 'font-normal',
                     'list-style-type' => 'list-disc',
                     'list-style-position' => 'list-inside',
+                    'margin-top' => 'mt-6',
+                    'margin-bottom' => 'mb-2',
                 ],
                 'ol' => [
                     'text-size' => 'text-base',
@@ -68,6 +98,8 @@ class StyleGuide extends Model
                     'font-weight' => 'font-normal',
                     'list-style-type' => 'list-decimal',
                     'list-style-position' => 'list-inside',
+                    'margin-top' => 'mt-6',
+                    'margin-bottom' => 'mb-2',
                 ]
             ],
             'links' => [
@@ -81,6 +113,50 @@ class StyleGuide extends Model
                     'text-color' => 'text-gray-900',
                     'text-decoration' => 'underline',
                 ]
+            ],
+            'buttons' => [
+                'gradient' => [
+                    'text-size' => 'text-base',
+                    'text-color' => 'text-gray-100',
+                    'font-weight' => 'font-normal',
+                    'text-decoration' => 'no-underline',
+                    'text-transform' => 'normal-case',
+                ],
+                'gray' => [
+                    'text-size' => 'text-base',
+                    'text-color' => 'text-blue-700',
+                    'font-weight' => 'font-normal',
+                    'text-decoration' => 'no-underline',
+                    'text-transform' => 'normal-case',
+                ],
+            ],
+            'testimonials' => [
+                'image' => [
+                    'width' => 'w-64',
+                    'height' => 'h-64',
+                    'rounded' => 'rounded-full',
+                ],
+                'quote' => [
+                    'text-size' => 'text-xl',
+                    'text-color' => 'text-white',
+                    'font-weight' => 'font-medium',
+                    'text-decoration' => 'no-underline',
+                    'text-transform' => 'normal-case',
+                ],
+                'author' => [
+                    'text-size' => 'text-base',
+                    'text-color' => 'text-gray-200',
+                    'font-weight' => 'font-medium',
+                    'text-decoration' => 'no-underline',
+                    'text-transform' => 'normal-case',
+                ],
+                'credits' => [
+                    'text-size' => 'text-sm',
+                    'text-color' => 'text-gray-200',
+                    'font-weight' => 'font-medium',
+                    'text-decoration' => 'no-underline',
+                    'text-transform' => 'normal-case',
+                ],
             ]
         ];
     }

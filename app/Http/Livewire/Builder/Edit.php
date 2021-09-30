@@ -33,7 +33,8 @@ class Edit extends Component
 
     public function classesFor($key)
     {
-        $classes = Arr::get($this->form, $key);
+        $classes = Arr::get($this->form, $key) ?? Arr::get(StyleGuide::defaultSettings(), $key);
+
         $values = array_values($classes);
         if(Str::contains($key, 'hover')) {
             $values = array_map(fn($value) => 'hover:'.$value, $values);
